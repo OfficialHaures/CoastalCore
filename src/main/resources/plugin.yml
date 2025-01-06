@@ -1,4 +1,29 @@
 name: CoastalCore
-version: '1.0'
+version: '${project.version}'
 main: nl.inferno.coastalCore.CoastalCore
-api-version: '1.21'
+api-version: '1.13'
+commands:
+  tempfly:
+    description: Gives a temporary flight feather
+    usage: /<command> <minutes>
+    permission: coastalcore.tempfly
+  smeltwand:
+    description: Get a wand that can smelt items in chests
+    usage: /<command> <uses>
+    permission: coastalcore.smeltwand
+  convert:
+    description: Convert items to blocks
+    usage: /<command>
+    permission: coastalcore.convert
+  unconvert:
+    description: Convert blocks back to items
+    usage: /<command>
+    permission: coastalcore.convert
+
+permissions:
+  coastalcore.tempfly:
+    default: op
+  coastalcore.smeltwand:
+    default: op
+  coastalcore.convert:
+    default: op
