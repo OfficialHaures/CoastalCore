@@ -1,0 +1,4 @@
+name: CoastalCore
+version: '1.0'
+main: nl.inferno.coastalCore.CoastalCore
+api-version: '1.21'

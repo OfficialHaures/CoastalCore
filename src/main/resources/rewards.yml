@@ -1,0 +1,54 @@
+# CoastalCore Rewards Configuration
+
+daily_rewards:
+  items:
+    - material: DIAMOND
+      amount: 3
+    - material: GOLDEN_APPLE
+      amount: 5
+    - material: EXPERIENCE_BOTTLE
+      amount: 16
+  money: 1000
+  commands:
+    - "effect give %player% speed 3600 1"
+
+weekly_rewards:
+  items:
+    - material: DIAMOND_BLOCK
+      amount: 2
+    - material: NETHERITE_INGOT
+      amount: 1
+    - material: GOLDEN_APPLE
+      amount: 16
+    - material: EXPERIENCE_BOTTLE
+      amount: 32
+  money: 5000
+  commands:
+    - "effect give %player% strength 7200 1"
+
+monthly_rewards:
+  items:
+    - material: NETHERITE_BLOCK
+      amount: 1
+    - material: DIAMOND_BLOCK
+      amount: 5
+    - material: ENCHANTED_GOLDEN_APPLE
+      amount: 3
+    - material: EXPERIENCE_BOTTLE
+      amount: 64
+  money: 25000
+  commands:
+    - "effect give %player% resistance 12000 1"
+    - "broadcast &a%player% just claimed their monthly reward!"
+
+messages:
+  daily_claimed: "&aYou claimed your daily reward!"
+  weekly_claimed: "&aYou claimed your weekly reward!"
+  monthly_claimed: "&aYou claimed your monthly reward!"
+  already_claimed: "&cYou already claimed this reward! Wait %time% before claiming again."
+  no_permission: "&cYou don't have permission to claim this reward!"
+
+cooldowns:
+  daily: 86400    # 24 hours in seconds
+  weekly: 604800  # 7 days in seconds
+  monthly: 2592000 # 30 days in seconds
